@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DocXcellence</string>
+    <string name="girl_img">Splash Image Female Doctor</string>
+    <string name="docxcellence">DocXcellence</string>
+    <string name="transforming_healthcare_experiences_seamlessly_connecting_patients_and_providers_with_docxcellence_where_every_appointment_is_a_step_towards_wellness_and_care_beyond_expectations">Transforming Healthcare Experiences: Seamlessly connecting patients and providers with DocXcellence - where every appointment is a step towards wellness and care beyond expectations.</string>
+    <string name="get_started">Get Started</string>
 </resources>
