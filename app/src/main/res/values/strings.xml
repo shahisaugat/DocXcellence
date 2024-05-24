@@ -14,4 +14,9 @@
     <string name="use_your_email_instead">Use your email instead</string>
     <string name="or">OR</string>
     <string name="signup_with_google">Signin with google</string>
+    <string name="we_have_sent_you_a_4_digit_verification_code_on_your_number">We have sent you a 4 digit verification code on your number.</string>
+    <string name="verify_your_otp">Verify your OTP</string>
+    <string name="didn_t_get_the_code">Didn\'t get the code?</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="verify_otp">Verify OTP</string>
 </resources>
