@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "929788887680",
+    "project_id": "docxcellence-7f38e",
+    "storage_bucket": "docxcellence-7f38e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929788887680:android:141f0cfd958321c2269c65",
+        "android_client_info": {
+          "package_name": "com.example.docxcellence"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLnyBO8uHMo_2xeqP61f2Ka7BAxOoOB4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

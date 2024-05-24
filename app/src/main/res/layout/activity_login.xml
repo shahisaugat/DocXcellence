@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="25dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/back_button_image"
+            app:srcCompat="@drawable/back_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="76dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3">
+
+        <ImageView
+            android:id="@+id/mobileIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mobile_image_icon"
+            app:srcCompat="@drawable/mobile_img" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.033">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/otp_send_txt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.164"
+            app:layout_constraintStart_toStartOf="@+id/enterMobileNumberLabel"
+            app:layout_constraintTop_toBottomOf="@+id/enterMobileNumberLabel"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/enterMobileNumberLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_bold"
+            android:text="@string/enter_mobile_number"
+            android:textColor="@color/txt_color"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/formHolderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.147">
+
+        <TextView
+            android:id="@+id/mobileNumberLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/istok_regular"
+            android:text="@string/mobile_number"
+            android:textColor="@color/txt_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/numberEntryField"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:background="@drawable/input_field"
+            android:ems="10"
+            android:inputType="text" />
+
+        <CheckBox
+            android:id="@+id/termsCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="38dp"
+            android:fontFamily="@font/istok_regular"
+            android:paddingStart="4dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="4dp"
+            android:text="@string/term_sheet"
+            android:textColor="@color/txt_color"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sendOtpBtn"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/send_otp_btn"
+            android:fontFamily="@font/istok_bold"
+            android:text="@string/send_otp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formHolderLayout"
+        app:layout_constraintVertical_bias="0.161">
+
+        <TextView
+            android:id="@+id/emailInsteadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/istok_regular"
+            android:textColor="@color/brand_color"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/use_your_email_instead" />
+
+        <TextView
+            android:id="@+id/orLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/istok_regular"
+            android:textSize="14sp"
+            android:textColor="@color/txt_color"
+            android:layout_marginBottom="16dp"
+            android:text="@string/or" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signInGoogleBtn"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            style="@android:style/Widget.Button"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/istok_bold"
+            android:textColor="@color/txt_color"
+            android:drawableStart="@drawable/google_logo"
+            android:background="@drawable/google_sign_in_btn"
+            android:text="@string/signup_with_google" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

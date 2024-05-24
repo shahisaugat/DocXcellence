@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brand_color"
+    tools:context=".SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/imageHolderLayout"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/girlImage"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:contentDescription="@string/girl_img"
+            app:srcCompat="@drawable/female_doctor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageHolderLayout">
+
+        <TextView
+            android:id="@+id/docXcellenceLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/istok_bold"
+            android:text="@string/docxcellence"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/appDescLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginEnd="33dp"
+            android:fontFamily="@font/istok_regular"
+            android:text="@string/transforming_healthcare_experiences_seamlessly_connecting_patients_and_providers_with_docxcellence_where_every_appointment_is_a_step_towards_wellness_and_care_beyond_expectations"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonHolderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.429">
+
+        <Button
+            android:id="@+id/getStartedBtn"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginEnd="33dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/istok_bold"
+            android:text="@string/get_started"
+            android:textColor="@color/txt_color"
+            android:textSize="17sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
