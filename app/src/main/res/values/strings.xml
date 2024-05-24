@@ -4,4 +4,14 @@
     <string name="docxcellence">DocXcellence</string>
     <string name="transforming_healthcare_experiences_seamlessly_connecting_patients_and_providers_with_docxcellence_where_every_appointment_is_a_step_towards_wellness_and_care_beyond_expectations">Transforming Healthcare Experiences: Seamlessly connecting patients and providers with DocXcellence - where every appointment is a step towards wellness and care beyond expectations.</string>
     <string name="get_started">Get Started</string>
+    <string name="back_button_image">Back Button Image</string>
+    <string name="mobile_image_icon">Mobile Image Icon</string>
+    <string name="otp_send_txt">OTP will be sent to this number.</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="term_sheet">By continuing, you agree to the Terms and Privacy Policy of DocXcellence.</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="use_your_email_instead">Use your email instead</string>
+    <string name="or">OR</string>
+    <string name="signup_with_google">Signup with google</string>
 </resources>
