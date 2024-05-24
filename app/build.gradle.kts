@@ -46,6 +46,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation("com.github.bumptech.glide:glide:4.11.0")
     implementation("com.google.android.gms:play-services-auth:21.1.1")
     implementation(libs.firebase.auth)
     testImplementation(libs.junit)
