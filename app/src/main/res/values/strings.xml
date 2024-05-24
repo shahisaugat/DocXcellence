@@ -13,5 +13,5 @@
     <string name="send_otp">Send OTP</string>
     <string name="use_your_email_instead">Use your email instead</string>
     <string name="or">OR</string>
-    <string name="signup_with_google">Signup with google</string>
+    <string name="signup_with_google">Signin with google</string>
 </resources>
