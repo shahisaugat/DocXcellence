@@ -88,9 +88,8 @@ class LoginActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Log.d("SignInActivity", "signInWithCredential:success")
-                    val intent = Intent(this, DashboardActivity::class.java)
+                    val intent = Intent(this@LoginActivity, DashboardActivity::class.java)
                     startActivity(intent)
-                    finish()
                 } else {
                     Log.w("SignInActivity", "signInWithCredential:failure", task.exception)
                 }
