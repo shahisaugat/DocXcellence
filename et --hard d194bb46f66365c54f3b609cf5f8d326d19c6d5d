@@ -1,0 +1,144 @@
+[33mcommit d194bb46f66365c54f3b609cf5f8d326d19c6d5d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/sushant[m[33m)[m
+Author: Sushant <susantmahat2@gmail.com>
+Date:   Sun May 26 23:00:29 2024 +0545
+
+    formatted with comment in the backend code
+
+[33mcommit cd4a20c3de2ecd74645f372157c1ff9f260c0556[m
+Author: Sushant <susantmahat2@gmail.com>
+Date:   Sun May 26 22:59:26 2024 +0545
+
+    full backend code for verification otp
+
+[33mcommit 71b18a9dda45721ec7cc2865c4e54c789d85ac45[m
+Author: Sushant <susantmahat2@gmail.com>
+Date:   Sun May 26 22:58:30 2024 +0545
+
+    auth for otp verifivation
+
+[33mcommit 2793c0b614e9da4d8a64dd8c9761a468a6ad249a[m
+Author: Sushant <susantmahat2@gmail.com>
+Date:   Sun May 26 22:56:52 2024 +0545
+
+    irrelevent comments removed and phoneNumberVerification backend code formatted
+
+[33mcommit b166294e5f6266fa0261763615d9f34c0207a63f[m
+Author: Sushant <susantmahat2@gmail.com>
+Date:   Sun May 26 22:53:48 2024 +0545
+
+    phone number otp send complete backend
+
+[33mcommit 4e8ee8e83db69b6aae9d5e321c1d903da58bb50e[m
+Author: Sushant <susantmahat2@gmail.com>
+Date:   Sun May 26 22:52:30 2024 +0545
+
+    otp verification error handled
+
+[33mcommit 8ee7453be51a6a99d810df54a3ff774d3daf5e5a[m
+Author: Sushant <susantmahat2@gmail.com>
+Date:   Sun May 26 22:30:59 2024 +0545
+
+    LoginOTP backend and Verify OTP backend
+
+[33mcommit 013ea5bde27365ce8ebeec50272d808f30080a5b[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: 68b0a71 387e844
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 22:44:19 2024 +0545
+
+    Merge frontend code from saugat-branch into master
+
+[33mcommit 68b0a716646be4384888a071d4975ffeff4caf97[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 22:43:41 2024 +0545
+
+    Main
+
+[33mcommit 387e844e27270666f527383f442fceeb4354fcb7[m[33m ([m[1;31morigin/saugat[m[33m, [m[1;32msaugat[m[33m)[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 18:45:23 2024 +0545
+
+    Google Login Final Push
+
+[33mcommit 807cd4aa3b192b0d1f69ba53bf72becf9fe745da[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 18:33:48 2024 +0545
+
+    Login Activity Backend Modified and Manifestation Changed
+
+[33mcommit 1b05490dba93d815d77ffd64a7f26d840cc81013[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 18:21:00 2024 +0545
+
+    Google Sign In Backend Integrated
+
+[33mcommit e8cc5dcff5adba65b71109a517c92f84e29f706e[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 18:15:46 2024 +0545
+
+    Dashboard Activity Frontend Initiated
+
+[33mcommit fcab15bca7823ec3626cb9e1cc8d90087248e1af[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 18:07:59 2024 +0545
+
+    Intent Setup for OTP Activity
+
+[33mcommit 8970db6c324d584bb8f6ff9e6df49f116fcbed8f[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 18:03:02 2024 +0545
+
+    Intent Setup for Login Activity
+
+[33mcommit 3a4164d7374bfb304f7f142c9591e40061950556[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 17:57:54 2024 +0545
+
+    Custom Layout Splash Suppression
+
+[33mcommit da70eacd33a6e544caf61dbf8aa1a1dfa314f16b[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 17:57:09 2024 +0545
+
+    Intent Setup for Splash Activity
+
+[33mcommit 73efa102149481ef8dbcd12ec52ffda5acc5423a[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 17:52:56 2024 +0545
+
+    OTP Activity Frontend
+
+[33mcommit 94e035ba481aad312c369cc8e16fb72f93cf6085[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 17:47:02 2024 +0545
+
+    Standard Naming Conventions Setup
+
+[33mcommit d43cc60ef1714f06e8a8c385af0550f304f76aff[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 17:42:32 2024 +0545
+
+    Login Activity Frontend
+
+[33mcommit db1d0c6efadad70558e254bd53f3f4856a105e4c[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 17:33:40 2024 +0545
+
+    Splash Screen Frontend
+
+[33mcommit 7672889790318acb162e9d46dbbbff9916bfecc9[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 17:25:37 2024 +0545
+
+    First Commit | Branch Saugat
+
+[33mcommit 4465d4dcd4c51b96b1f1d31153d0ad8c42b1b249[m
+Author: Saugat Shahi Thakuri <devops.shahi@gmail.com>
+Date:   Fri May 24 17:24:08 2024 +0545
+
+    Initial Commit
+
+[33mcommit d10e533983c7d977cb315b1ccd510e2bd1182924[m
+Author: Saugat Shahi Thakuri <159759418+shahisaugat@users.noreply.github.com>
+Date:   Fri May 24 17:22:34 2024 +0545
+
+    Initial commit
