@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.docxcellence.databinding.ActivitySplashBinding
+import com.google.firebase.FirebaseApp
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {

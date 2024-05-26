@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "929788887680",
+    "firebase_url": "https://docxcellence-7f38e-default-rtdb.firebaseio.com",
     "project_id": "docxcellence-7f38e",
     "storage_bucket": "docxcellence-7f38e.appspot.com"
   },
@@ -12,7 +13,28 @@
           "package_name": "com.example.docxcellence"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "929788887680-e3mnb3dafomkaob1obs80eeqf9tm2de3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.docxcellence",
+            "certificate_hash": "fb359f0d427c336ec0fbba63d2681d65750a8450"
+          }
+        },
+        {
+          "client_id": "929788887680-shd779f5npg4mnne83lr4nj4skhnrv3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.docxcellence",
+            "certificate_hash": "2fd3a43894b908dc0ad4531f442066bf34ce7590"
+          }
+        },
+        {
+          "client_id": "929788887680-jdh34ti6sgsau36t91jsetsm5h29cdaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCLnyBO8uHMo_2xeqP61f2Ka7BAxOoOB4M"
@@ -20,7 +42,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929788887680-jdh34ti6sgsau36t91jsetsm5h29cdaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
