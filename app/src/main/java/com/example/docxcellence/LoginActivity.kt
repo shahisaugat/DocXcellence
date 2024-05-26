@@ -124,14 +124,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun startPhoneNumberVerification(phoneNumber: String) {
         // [START start_phone_auth]
-        val options = PhoneAuthOptions.newBuilder(auth)
-            .setPhoneNumber("+977$phoneNumber")  //Phone for vrification and +977 is a country code
-            .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
-            .setActivity(this) // for callback
-            .setCallbacks(callbacks) // OnVerificationStateChangedCallbacks
-            .build()
-        PhoneAuthProvider.verifyPhoneNumber(options)
-        // [END start_phone_auth]
+
 
     }
 
