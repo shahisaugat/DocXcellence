@@ -49,9 +49,9 @@ class OTPActivity : AppCompatActivity() {
 //    }
 
     private fun verifyPhoneNumberWithCode(verificationId: String?, code: String) {
-
+        // [START verify_with_code]
         val credential = PhoneAuthProvider.getCredential(verificationId!!, code)
-
+        // [END verify_with_code]
         signInWithPhoneAuthCredential(credential)
     }
 
