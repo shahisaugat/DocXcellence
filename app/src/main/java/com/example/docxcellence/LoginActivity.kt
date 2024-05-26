@@ -114,25 +114,25 @@ class LoginActivity : AppCompatActivity() {
                 resendToken = token
 
                 //if the code sent is success redirect to the otpActivity
-                val intent = Intent(this@LoginActivity,OTPActivity::class.java)
-                intent.putExtra("storedVerificationId",storedVerificationId)
+                val intent = Intent(this@LoginActivity, OTPActivity::class.java)
+                intent.putExtra("storedVerificationId", storedVerificationId)
                 startActivity(intent)
             }
         }
-        // [END phone_auth_callbacks]
+
     }
 
     private fun startPhoneNumberVerification(phoneNumber: String) {
         // [START start_phone_auth]
 
         val options = PhoneAuthOptions.newBuilder(auth)
-            .setPhoneNumber("+977$phoneNumber")  //Phone for vrification and +977 is a country code
-            .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
-            .setActivity(this) // for callback
-            .setCallbacks(callbacks) // OnVerificationStateChangedCallbacks
+            .setPhoneNumber("+977$phoneNumber")
+            .setTimeout(60L, TimeUnit.SECONDS)
+            .setActivity(this)
+            .setCallbacks(callbacks)
             .build()
         PhoneAuthProvider.verifyPhoneNumber(options)
-        // [END start_phone_auth]
+
     }
 
     private fun signInWithGoogle() {
@@ -193,17 +193,14 @@ class LoginActivity : AppCompatActivity() {
                 } else {
                     Log.w(TAG, "signInWithCredential:failure", task.exception)
                     if (task.exception is FirebaseAuthInvalidCredentialsException) {
-                        // The verification code entered was invalid
+
                     }
-                    // Update UI
+
                 }
             }
     }
+
     private fun updateUI(user: FirebaseUser? = auth.currentUser) {
     }
-
-//    companion object {
-//        private const val TAG = "PhoneAuthActivity"
-//    }
 }
 
