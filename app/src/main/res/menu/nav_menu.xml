@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeButton"
+        android:title="Home"
+        android:icon="@drawable/home_icon">
+    </item>
+    <item
+        android:id="@+id/searchButton"
+        android:title="Search"
+        android:icon="@drawable/search_img">
+    </item>
+    <item
+        android:id="@+id/placeHolder"
+        android:title=""/>
+    <item
+        android:id="@+id/bellButton"
+        android:title="Notification"
+        android:icon="@drawable/bell">
+    </item>
+    <item
+        android:id="@+id/profileButton"
+        android:title="Profile"
+        android:icon="@drawable/profile">
+    </item>
+</menu>
