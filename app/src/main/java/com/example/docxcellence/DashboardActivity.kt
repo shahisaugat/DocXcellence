@@ -23,6 +23,9 @@ class DashboardActivity : AppCompatActivity() {
             insets
         }
         val currentUser = mAuth.currentUser
-        Glide.with(this).load(currentUser?.photoUrl).into(dashboardBinding.imageView)
+        Glide.with(this).load(currentUser?.photoUrl).into(dashboardBinding.profilePicture)
+
+        dashboardBinding.bottomNavigationView.background = null
+        dashboardBinding.bottomNavigationView.menu.getItem(2).isEnabled = false
     }
 }

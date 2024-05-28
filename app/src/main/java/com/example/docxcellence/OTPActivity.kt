@@ -17,6 +17,7 @@ class OTPActivity : AppCompatActivity() {
     private lateinit var otpBinding: ActivityOtpBinding
     private var storedVerificationId : String? = ""
     private lateinit var auth: FirebaseAuth
+    private lateinit var typedCode: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -34,8 +35,8 @@ class OTPActivity : AppCompatActivity() {
             goBack()
         }
         otpBinding.verifyOtpBtn.setOnClickListener {
-//            verifyOTPCode()
-            verifyPhoneNumberWithCode(storedVerificationId,otpBinding.editTextLayout.toString())
+            typedCode = otpBinding.code1.text.toString() + otpBinding.code2.text.toString() + otpBinding.code3.text.toString() + otpBinding.code4.text.toString() + otpBinding.code5.text.toString() + otpBinding.code6.text.toString()
+            verifyPhoneNumberWithCode(storedVerificationId,typedCode.trim())
         }
     }
     private fun goBack() {
@@ -43,10 +44,6 @@ class OTPActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
-
-//    private fun verifyOTPCode() {
-//        // Firebase Implementation here
-//    }
 
     private fun verifyPhoneNumberWithCode(verificationId: String?, code: String) {
         // [START verify_with_code]
