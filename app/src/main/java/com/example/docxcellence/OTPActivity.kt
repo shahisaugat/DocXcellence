@@ -16,7 +16,7 @@ import com.google.firebase.auth.PhoneAuthProvider
 class OTPActivity : AppCompatActivity() {
     private lateinit var otpBinding: ActivityOtpBinding
     private var storedVerificationId : String? = ""
-    private lateinit var auth: FirebaseAuth
+    var auth: FirebaseAuth = FirebaseAuth.getInstance()
     private lateinit var typedCode: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +28,7 @@ class OTPActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
 
         storedVerificationId = intent.getStringExtra("storedVerificationId")
 
@@ -50,6 +51,9 @@ class OTPActivity : AppCompatActivity() {
         val credential = PhoneAuthProvider.getCredential(verificationId!!, code)
         // [END verify_with_code]
         signInWithPhoneAuthCredential(credential)
+        val intent = Intent(this@OTPActivity,DashboardActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     private fun signInWithPhoneAuthCredential(credential: PhoneAuthCredential) {
@@ -63,6 +67,7 @@ class OTPActivity : AppCompatActivity() {
 
                     val intent = Intent(this@OTPActivity,DashboardActivity::class.java)
                     startActivity(intent)
+                    finish()
 
                 } else {
                     // Sign in failed, display a message and update the UI
