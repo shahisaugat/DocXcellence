@@ -31,6 +31,16 @@ class DashboardActivity : AppCompatActivity() {
             insets
         }
 
+        // Initialize ImageSwitcher using view binding
+        val view = dashboardBinding.root
+        val imageSwitcher = dashboardBinding.imageSwitcher
+        imageSwitcher.setFactory(ViewSwitcher.ViewFactory {
+            val imageView = ImageView(view.context)
+            imageView.scaleType = ImageView.ScaleType.CENTER_CROP
+            imageView
+        })
+
+
 
         val currentUser = mAuth.currentUser
         Glide.with(this).load(currentUser?.photoUrl).into(dashboardBinding.profilePicture)
