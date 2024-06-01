@@ -64,8 +64,6 @@ class DashboardActivity : AppCompatActivity() {
         dashboardBinding.bottomNavigationView.menu.getItem(2).isEnabled = false
         dashboardBinding.textView4.text=currentUser?.displayName.toString()
     }
-
-
 }
 
 
