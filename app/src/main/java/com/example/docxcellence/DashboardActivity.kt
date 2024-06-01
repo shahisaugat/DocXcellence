@@ -44,6 +44,16 @@ class DashboardActivity : AppCompatActivity() {
         val imageIds = arrayOf(R.drawable.image1, R.drawable.image2) // Replace with actual resource IDs
         var currentIndex = 0
 
+        // Initialize handler and runnable for image switching
+        val handler = Handler(Looper.getMainLooper())
+        val runnable = object : Runnable {
+            override fun run() {
+                currentIndex = (currentIndex + 1) % imageIds.size
+                imageSwitcher.setImageResource(imageIds[currentIndex])
+                handler.postDelayed(this, 3000) // Switch image every 3 seconds
+            }
+        }
+
 
 
         val currentUser = mAuth.currentUser
