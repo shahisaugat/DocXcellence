@@ -13,6 +13,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.auth.FirebaseAuth
 import com.bumptech.glide.Glide
+import com.denzcoskun.imageslider.ImageSlider
+import com.denzcoskun.imageslider.constants.ScaleTypes
+import com.denzcoskun.imageslider.models.SlideModel
 import com.example.docxcellence.databinding.ActivityDashboardBinding
 
 class DashboardActivity : AppCompatActivity() {
@@ -33,9 +36,16 @@ class DashboardActivity : AppCompatActivity() {
         val currentUser = mAuth.currentUser
         Glide.with(this).load(currentUser?.photoUrl).into(dashboardBinding.profilePicture)
 
-        dashboardBinding.bottomNavigationView.background = null
-        dashboardBinding.bottomNavigationView.menu.getItem(2).isEnabled = false
-        dashboardBinding.textView4.text=currentUser?.displayName.toString()
+        val imageList = ArrayList<SlideModel>()
+
+        imageList.add(SlideModel(R.drawable.banner, ScaleTypes.CENTER_INSIDE))
+        imageList.add(SlideModel(R.drawable.banner1, ScaleTypes.CENTER_INSIDE))
+
+        val imageSlider = dashboardBinding.imageSlider
+        imageSlider.setImageList(imageList)
+        imageSlider.startSliding(100)
+        imageSlider.startSliding()
+        imageSlider.stopSliding()
     }
 }
 
