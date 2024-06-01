@@ -98,6 +98,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
                 android:layout_marginTop="34dp">
 
                 <ProgressBar
@@ -117,12 +119,14 @@
 <!--                    app:layout_constraintEnd_toEndOf="parent"-->
 <!--                    app:layout_constraintStart_toStartOf="parent"-->
 <!--                    app:layout_constraintTop_toTopOf="parent" />-->
-                <ImageSwitcher
-                    android:id="@+id/imageSwitcher"
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/image_slider"
                     android:layout_width="match_parent"
-                    android:layout_height="170dp"
-                    android:inAnimation="@android:anim/fade_in"
-                    android:outAnimation="@android:anim/fade_out"
+                    android:layout_height="158dp"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="1000"
+                    app:iss_period="1000"
+                    app:iss_text_align="CENTER"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -296,43 +300,4 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
-
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:theme="@style/Theme.Fab_Bottom_app_bar"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollViewMain"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <com.google.android.material.bottomappbar.BottomAppBar
-            android:id="@+id/bottomAppBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            app:fabCradleMargin="10dp"
-            app:fabCradleRoundedCornerRadius="10dp"
-            app:fabCradleVerticalOffset="10dp">
-
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/bottomNavigationView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="16dp"
-                app:labelVisibilityMode="unlabeled"
-                android:background="@android:color/transparent"
-                app:menu="@menu/nav_menu" />
- 
-        </com.google.android.material.bottomappbar.BottomAppBar>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/brand_color"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/bell"
-            app:layout_anchor="@id/bottomAppBar" />
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
