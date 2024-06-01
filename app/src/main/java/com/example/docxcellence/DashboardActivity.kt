@@ -54,7 +54,8 @@ class DashboardActivity : AppCompatActivity() {
             }
         }
 
-
+        // Start the image switcher
+        handler.postDelayed(runnable, 3000)
 
         val currentUser = mAuth.currentUser
         Glide.with(this).load(currentUser?.photoUrl).into(dashboardBinding.profilePicture)
