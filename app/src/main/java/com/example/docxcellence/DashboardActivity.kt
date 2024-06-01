@@ -40,6 +40,10 @@ class DashboardActivity : AppCompatActivity() {
             imageView
         })
 
+        /// Initialize image resource IDs
+        val imageIds = arrayOf(R.drawable.image1, R.drawable.image2) // Replace with actual resource IDs
+        var currentIndex = 0
+
 
 
         val currentUser = mAuth.currentUser
