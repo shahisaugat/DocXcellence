@@ -53,9 +53,12 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    //
+    // Firebase Authentication
     implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
     implementation("com.google.firebase:firebase-auth-ktx")
+
+    // Image Slider Github IO
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
 
 
 }

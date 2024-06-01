@@ -30,33 +30,6 @@ class DashboardActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        // Initialize ImageSwitcher using view binding
-        val view = dashboardBinding.root
-        val imageSwitcher = dashboardBinding.imageSwitcher
-        imageSwitcher.setFactory(ViewSwitcher.ViewFactory {
-            val imageView = ImageView(view.context)
-            imageView.scaleType = ImageView.ScaleType.CENTER_CROP
-            imageView
-        })
-
-        /// Initialize image resource IDs
-        val imageIds = arrayOf(R.drawable.image1, R.drawable.image2) // Replace with actual resource IDs
-        var currentIndex = 0
-
-        // Initialize handler and runnable for image switching
-        val handler = Handler(Looper.getMainLooper())
-        val runnable = object : Runnable {
-            override fun run() {
-                currentIndex = (currentIndex + 1) % imageIds.size
-                imageSwitcher.setImageResource(imageIds[currentIndex])
-                handler.postDelayed(this, 3000) // Switch image every 3 seconds
-            }
-        }
-
-        // Start the image switcher
-        handler.postDelayed(runnable, 3000)
-
         val currentUser = mAuth.currentUser
         Glide.with(this).load(currentUser?.photoUrl).into(dashboardBinding.profilePicture)
 
