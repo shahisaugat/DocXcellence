@@ -110,13 +110,24 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <androidx.viewpager2.widget.ViewPager2
+<!--                <androidx.viewpager2.widget.ViewPager2-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="160dp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+                <ImageSwitcher
+                    android:id="@+id/imageSwitcher"
                     android:layout_width="match_parent"
-                    android:layout_height="160dp"
+                    android:layout_height="170dp"
+                    android:inAnimation="@android:anim/fade_in"
+                    android:outAnimation="@android:anim/fade_out"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
             <LinearLayout
                 android:layout_width="match_parent"
