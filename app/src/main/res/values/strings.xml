@@ -20,4 +20,6 @@
     <string name="resend_code">Resend Code</string>
     <string name="verify_otp">Verify OTP</string>
     <string name="default_web_client_id">929788887680-jdh34ti6sgsau36t91jsetsm5h29cdaj.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
