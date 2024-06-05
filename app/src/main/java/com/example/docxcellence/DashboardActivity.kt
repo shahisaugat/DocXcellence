@@ -33,19 +33,6 @@ class DashboardActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val currentUser = mAuth.currentUser
-        Glide.with(this).load(currentUser?.photoUrl).into(dashboardBinding.profilePicture)
-
-        val imageList = ArrayList<SlideModel>()
-
-        imageList.add(SlideModel(R.drawable.banner, ScaleTypes.CENTER_INSIDE))
-        imageList.add(SlideModel(R.drawable.banner1, ScaleTypes.CENTER_INSIDE))
-
-        val imageSlider = dashboardBinding.imageSlider
-        imageSlider.setImageList(imageList)
-        imageSlider.startSliding(100)
-        imageSlider.startSliding()
-        imageSlider.stopSliding()
     }
 }
 
